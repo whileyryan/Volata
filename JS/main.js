@@ -19,6 +19,7 @@ $(document).ready(function(){
 });
 
 function shitStack(type){
+	console.log(type);
 	if (type=='Beer'){
 		$('.wine-list').hide();
 		$('.request').hide();
