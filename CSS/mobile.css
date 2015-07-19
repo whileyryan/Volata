@@ -1,0 +1,40 @@
+
+@media screen and (max-width: 760px) {
+  #contact{
+    padding-left:10%;
+    padding-top: 15%;
+    height:120%;
+  }
+  #dinner{
+    padding:5%;
+    padding-top: 15%;
+  }
+  #lunch{
+    padding-top: 15%;
+  }
+  #drinks{
+    font-size: 32px;
+  }
+  .drink-title{
+    margin-top: 15%;
+  }
+  .mobile-pizza{
+    margin-right:5%;
+    margin-left:5%;
+  }
+  .beers-mobile{
+    width:20%;
+  }
+  .beer-list{
+    overflow:scroll;
+    height:330px;
+    overflow-x: hidden;
+    font-size: 18px;
+  }
+  .wine-list{
+    overflow:scroll;
+    height:330px;
+    overflow-x: hidden;
+    font-size: 18px;
+  }
+}

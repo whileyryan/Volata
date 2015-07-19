@@ -2,11 +2,7 @@
 $(document).ready(function(){
 	var beerRequests = [];
 	$('.drink-names').click(function(){
-		shitStack($(this).text());
-	});
-	$('.beerSubmit').click(function(e){
-		e.preventDefault();
-		logBeer($('.beerInput')[0]['value'], beerRequests);
+		showDrinks($(this).text());
 	});
 	$('.drink-names').hover(function(){
 		$(this).css('cursor', 'pointer');
@@ -14,11 +10,18 @@ $(document).ready(function(){
 	$('.pizza-menu').scroll(function(){
 		$('.scroll-bottom').fadeOut();
 	});
-	
-	
+	$('.pizza-menu-lunch').scroll(function(){
+		$('.scroll-bottom-lunch').fadeOut();
+	});
+	$("#tooltip").tooltip();
+	$( "#tooltip" ).tooltip({
+	  tooltipClass: "custom-tooltip-styling"
+	});
 });
 
-function shitStack(type){
+
+
+function showDrinks(type){
 	if (type=='Beer'){
 		$('.wine-list').hide();
 		$('.request').hide();
@@ -29,12 +32,6 @@ function shitStack(type){
 		$('.beer-list').hide();
 		$('.request').hide();
 		$('.wine-list').fadeIn('slow', function(){
-			
-		});
-	} else if (type='Request a Beer'){
-		$('.beer-list').hide();
-		$('.wine-list').hide();
-		$('.request').fadeIn('slow', function(){
 			
 		});
 	}	
