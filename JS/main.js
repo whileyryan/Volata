@@ -10,6 +10,13 @@ $(document).ready(function(){
 	$('.pizza-menu').scroll(function(){
 		$('.scroll-bottom').fadeOut();
 	});
+	$('.pizza-menu-lunch').scroll(function(){
+		$('.scroll-bottom-lunch').fadeOut();
+	});
+	$("#tooltip").tooltip();
+	$( "#tooltip" ).tooltip({
+	  tooltipClass: "custom-tooltip-styling"
+	});
 });
 
 

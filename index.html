@@ -2,38 +2,334 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>La Volata</title>
-<style type="text/css">
+<meta name="viewport" content="width=device-width" />
+<title>La Volata Pizzeria</title>
+<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/index.css">
+<link rel="stylesheet" type="text/css" href="CSS/home.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="JS/main.js"></script>
+
+<style>
+
+@media screen and (max-width: 760px) {
+  #contact{
+    padding-left:10%;
+    padding-top: 15%;
+    height:120%;
+  }
+  #dinner{
+    padding:5%;
+    padding-top: 15%;
+  }
+  #lunch{
+    padding-top: 15%;
+  }
+  #drinks{
+    font-size: 32px;
+  }
+  .drink-title{
+    margin-top: 15%;
+  }
+  .mobile-pizza{
+    margin-right:5%;
+    margin-left:5%;
+  }
+  .beers-mobile{
+    width:20%;
+  }
+  .beer-list{
+    overflow:scroll;
+    height:330px;
+    overflow-x: hidden;
+    font-size: 18px;
+  }
+  .wine-list{
+    overflow:scroll;
+    height:330px;
+    overflow-x: hidden;
+    font-size: 18px;
+  }
+}
 
 </style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="CSS/index.css">
-
-<script src="JS/bootstrap.min.js"></script>
-
+<style>
+   .custom-tooltip-styling{
+    color:#000;
+    background-color: #fff;
+    width:200px;
+    margin-left:20px;
+    border-radius: 8px;
+    padding:5px;
+    opacity: 0.9;
+   }
+</style>
 
 </head>
 
 <body>
+<div class='navbar-default'>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#volata-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="volata-menu">
+        <ul class="nav navbar-nav ">
+          <table class='nav-buttons' style="width:100%; margin-left:45%;">
+            <tr>
+              <td><li><h3><a href='#contact' class='col-md-12 volata-button'>contact & hours</a></h3></li></td>
+              <td><li><h3><a href='#dinner' class='col-md-4 volata-button'>dinner</a></h3></li></td>
+              <td><li><h3><a href='#lunch' class='col-md-4 volata-button'>lunch</a></h3></li></td>
+              <td><li><h3><a href='#drinks' class='col-md-12 volata-button'>beer & wine</a></h3></li></td>
+              <td><li><h3><a href='#about' class='col-md-4 volata-button'>about</a></h3></li></td>
+            </tr>
+          </table>
+        </ul>
+      </div>
+    </div>
+  </nav> 
 
-<div class="container">
-  <div class="content"> 
-  <div class='row'>
-	<video autoplay loop id="bgvid" controls muted>
-	  <source src="http://www.uploadhosting.co/uploads/208.184.96.233/medium.m4v" type="video/mp4">
-	</video>
-
-	<div class='volata_badge text-center'>
-		<img src='http://i.imgur.com/tCUfh4M.png'>
-		<a href='home.php'><h3 style='margin-left:20%;'>Enter La Volata</h3></a>
-	</div>
+  
 
 
 </div>
+<div id='contact'>
+  <div class='row'>
+    <h1 class='contact-title col-md-offset-1'>La Volata Pizzeria</h1>
+    </div>
+  <div class='row col-md-offset-1'>
+  <div class='row'>
+    <div class='col-md-4 margin-top-10 location'>
+      <h3>Location</h3>
+      <div class='divider'></div>
+      <div class='row'>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.1857233383193!2d-117.15600309999998!3d34.0391067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db560ea7a74e75%3A0x8a06c7b18da73576!2sLa+Volata+Pizzeria!5e0!3m2!1sen!2sus!4v1436849514939" width="375" height="300" frameborder="0" style="border:0;margin-left:15px;" allowfullscreen></iframe>
+      </div>
+      <div class='row'><p class='col-md-8'><a href='https://www.google.com/maps/place/1453+Ford+St,+Redlands,+CA+92373/@34.0391067,-117.1560031,17z/data=!3m1!4b1!4m2!3m1!1s0x80db560ea9bf7f53:0x21fb67a8053abf23' target="_blank">1453 Ford St. Redlands, CA 92373</a></p></div><div class="row"><p class='col-md-8'> 909-792-0316</p></div>
+      
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-4'>
+      <h3>Hours</h3>
+      <div class='divider'></div>
+      <table>
+        <div class='row'><span class='hour-title col-md-6'><b>coffee service</b></span></div>
+        <div class='row'><div class='col-md-6'>mon - fri</div><div class='col-md-4'>6:30am - 11am</div><br>
+        <div class='col-md-6'>sat & sun</div><div class='col-md-4'>8am - noon</div></div>
+        <div class='space-5'></div>
+        <div class='row'><span class='hour-title col-md-6'><b>lunch service</b></span></div>
+        <div class='row'><div class='col-md-6'>wed - fri</div><div class='col-md-4'>11am - 2pm</div></div>
+        <div class='space-5'></div>
+        <div class='row'><span class='hour-title col-md-6' id='tooltip' title="Drinks, typically alcoholic, that are normally served before or after a meal (happy hour)"><b >aperitivo</b></span></div>
+        <div class='row'><div class='col-md-6'>fri - sun</div><div class='col-md-4'>3pm - 5pm</div></div>
+        <div class='space-5'></div>
+        <div class='row'><span class='hour-title col-md-6'><b>dinner service</b></span></div>
+        <div class='row'>
+          <div class='col-md-6'>mon</div><div class='col-md-4'>closed</div><br>
+          <div class='col-md-6'>tues - thurs</div><div class='col-md-4'>5pm - 9pm</div><br>
+          <div class='col-md-6'>fri & sat</div><div class='col-md-4'>5pm - 10pm</div><br>
+          <div class='col-md-6'>sun</div><div class='col-md-4'>5pm - 9pm</div>
+        </div>
+      </table>
+    </div>
+  </div>
+  <div class='row col-md-4'>
+    <h3>Social</h3>
+    <div class='divider'></div>
+      <div class='col-sm-4'>
+        <a href='https://www.facebook.com/atavolapizzeria' target="_blank"><img src='http://i.imgur.com/ARhoCuj.png'></a>
+      </div>
+      <div class='col-sm-4'>
+        <a href='http://instagram.com/lavolatapizzeria' target="_blank"><img src='http://i.imgur.com/sW5JXny.png'></a>
+    </div>
+  </div>
+</div>
+</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- MENU -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-    <!-- end .content --></div>
-  <!-- end .container --></div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!! DINNER !!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<div id='dinner'>
+<div class='row'>
+  <h1 class='contact-title menu-title text-center'>Dinner Menu</h1>
+      <div class='divider-black'></div>
+  </div>
+<div class='row col-md-offset-1 dinner-menu'>
+    <div class='col-md-4'>
+        <h3>Firsts</h3>
+          <div class='divider-black'></div>
+          <div class='row'><div class='col-md-10'><p><b>House-made Rustic Bread</b> with lardo and fennel pollen</p></div><div class='col-md-2'><p>$ 4</p></div></div>
+          <div class='row'><div class='col-md-10'><p><b>Local Greens</b> from the grove school with mustard vinaigrette</p></div><div class='col-md-2'><p>$ 6</p></div></div>
+          <div class='row'><div class='col-md-10'><p><b>Ribollita Soup</b> with Grana Padano toast</p></div><div class='col-md-2'><p>$ 8</p></div></div>     
+          <div class='row'><div class='col-md-10'><p><b>Farro Salad</b> with fire roasted butternut squash, kale and grana padano</p></div><div class='col-md-2'><p>$ 9</p></div></div>
+          <div class='row'><div class='col-md-10'><p><b>Three Sisters Winter Salad</b> with gorgonzolla picante and orange crème fraiche</p></div><div class='col-md-2'><p>$ 11</p></div></div>
+          <div class='row'><div class='col-md-10'><p><b>Cheese Plate</b> with assorted cheese, seasonal jam, and house-made toast</p></div><div class='col-md-2'><p>$ 14</p></div></div>
+          <div class='row'><div class='col-md-10'><p><b>Charcuterie Plate</b> with assorted cured meats and cheese, pickles and house-made toast</p></div><div class='col-md-2'><p>$ 16</p></div></div>
+          <div class='row'><div class='col-md-10'><p><b>Wild Boar Ragu</b> with house-made pappadelle</p></div><div class='col-md-2'><p>$ 16</p></div></div>
+          <div class='row'><div class='col-md-10'><p><b>Pasta del Giorno</b></p></div><div class='col-md-2'><p>varies</p></div></div>
+      </div>
+      <div class='col-md-4 pizza-menu'>
+        <h3>Pizzas</h3>
+          <div class='divider-black'></div>
+          <div class='scroll-bottom'>
+          <center><img src='http://www.marxentlabs.com/wp-content/themes/marxent/images/down-arrow.png' style='margin-top:15px;' /></center>
+          </div>
+          <div class='mobile-pizza'>
+            <div class='row'><div class='col-md-10'><h5><b>Marinara</b></h5></div><div class='col-md-2'><h5>$ 10</h5></div></div><div class='row col-md-10'>milled San Marzano tomatoes, garlic, and oregano (no cheese)</div>
+            <div class='row'><div class='col-md-10'><h5><b>Margherita</b></h5></div><div class='col-md-2'><h5>$ 12</h5></div></div><div class='row col-md-10'>milled San Marzano tomatoes, mozzarella, and basil (add sausage…4 or salami picante…2)</div>
+            <div class='row'><div class='col-md-10'><h5><b>Verdura</b></h5></div><div class='col-md-2'><h5>$ 14</h5></div></div><div class='row col-md-10'>caramelized fennel, fresh fennel, and pecorino Toscana (add sausage…4)</div>
+            <div class='row'><div class='col-md-10'><h5><b>Funghi</b></h5></div><div class='col-md-2'><h5>market price</h5></div></div><div class='row col-md-10'>today’s mushroom with fontina (add sausage…4 or salami picante…2)</div>
+            <div class='row'><div class='col-md-10'><h5><b>Arrabbiata</b></h5></div><div class='col-md-2'><h5>$ 17</h5></div></div><div class='row col-md-10'>milled San Marzano tomatoes, mozzarella, salami picante, fresno chilies and aleppo pepper</div>
+            <div class='row'><div class='col-md-10'><h5><b>Pistachio</b></h5></div><div class='col-md-2'><h5>$ 17</h5></div></div><div class='row col-md-10'>pistachios, parsley, red onion, and taleggio (add sausage…4)</div>
+            <div class='row'><div class='col-md-10'><h5><b>Pizza alla Lori</b></h5></div><div class='col-md-2'><h5>$ 18</h5></div></div><div class='row col-md-10'>house-made seasonal fruit spread, stilton, gorgonzola, arugula, prosciutto</div>
+            <div class='row'><div class='col-md-10'><h5><b>Chris’ Breakfast Pizza</b></h5></div><div class='col-md-2'><h5>$ 18</h5></div></div><div class='row col-md-10'>milled San Marzano tomatoes, house-made sausage, mozzarella, farm-fresh egg, and Sriracha</div>
+            <div class='row'><div class='col-md-10'><h5><b>Redlands Citrus Pizza</b></h5></div><div class='col-md-2'><h5>$ 15</h5></div></div><div class='row col-md-10'>sliced citrus, ricotta salata, arugula tossed in lemon juice, toasted almonds, EVOO (add prosciutto…3)</div>
+          </div>
+      </div>
+    <div class='col-md-3'>
+        <h3>Lasts</h3>
+          <div class='divider-black'></div>
+          <div class='row'><div class='col-md-10'><p><b>Cheese Plate</b></p></div><div class='col-md-2'><p>$10</p></div></div>
+        <div class='row'><div class='col-md-10'><p><b>Affogato</b></p></div><div class='col-md-2'><p>$ 8</p></div></div>
+        <div class='row'><div class='col-md-10'><p><b>Coffee and Tea</b></p></div><div class='col-md-2'><p>varies</p></div></div>
+      </div>
+  </div>
+</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!! LUNCH !!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<div id='lunch'>
+  <div class='row'>
+  <h1 class='contact-title menu-title text-center'>Lunch Menu</h1>
+      <div class='divider-black'></div>
+  </div>
+<div class='row col-md-offset-3 lunch-menu'>
+  <div class='space-30'></div>
+    <div class='row'><span class='hour-title col-md-6'><b>pizza al taglio</b></span></div>
+      <div class='row'><b class='col-md-2'>margherita</b><span class='col-md-6'>milled tomatoes, mozzarella, basil & olive oil</span><span class='col-md-2'>$ 4</span></div>
+      <div class='row'><b class='col-md-2'>arrabbiata</b><span class='col-md-6'>milled tomatoes, mozzarella, fresno chilies, & soppressatapiccante</span><span class='col-md-2'>$ 4.5</span></div>
+    <div class='space-15'></div>
+
+    <div class='row'><span class='hour-title col-md-6'><b>sandwiches</b></span></div>
+      <div class='row'><b class='col-md-2'>the cure</b><span class='col-md-6'>prosciutto, mustard, dressed greens, grana padano & house pickles</span><span class='col-md-2'>$ 8</span></div>
+      <div class='row'><b class='col-md-2'>the roast</b><span class='col-md-6'>house roasted turkey, pesto, aioli, dressed greens, & house pickles</span><span class='col-md-2'>$ 8</span></div>
+      <div class='row'><b class='col-md-2'>the veg</b><span class='col-md-6'>roasted seasonal vegetables, dijon mustard, lemon& herbed ricotta</span><span class='col-md-2'>$ 7</span></div>
+    <div class='space-15'></div>
+
+    <div class='row'><span class='hour-title col-md-6'><b>salads</b></span></div>
+      <div class='row'><b class='col-md-2'>local greens</b><span class='col-md-6'>local seasonal lettuces & dijon vinaigrette</span><span class='col-md-2'>$ 6</span></div>
+      <div class='row'><b class='col-md-2'>farro salad</b><span class='col-md-6'>farro, roasted butternut squash, seasonal greens, & grana padano</span><span class='col-md-2'>$ 7</span></div>
+    <div class='space-15'></div>
+
+    <div class='row'><span class='hour-title col-md-6'><b>plates</b></span></div>
+      <div class='row'><b class='col-md-2'>antipasto</b><span class='col-md-6'>two cured meats, one cheese, marinated olives, & house-made sourdough</span><span class='col-md-2'>$ 12</span></div>
+      <div class='row'><b class='col-md-2'>cheese</b><span class='col-md-6'>two cheeses, seasonal fruit, house pickles, & house-made sourdough</span><span class='col-md-2'>$ 10</span></div>
+  </div>
+</div>
+
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- DRINKS -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<div id='drinks'>
+<div class='d-cover'>
+  <div class='row'>
+    <h1 class='contact-title drink-title text-center'>Drinks</h1>
+    </div>
+    <div class='drinks-bar'>
+        <div class='col-md-offset-3'>
+            <div class='row beers-mobile'><div class='col-md-7'><h2><div class='drink-names'>Beer</div></h2></div>
+            <div class='col-md-2'><h2><div class='drink-names ml'>Wine</div></h2></div></div>
+        </div>
+    </div>
+    <div class='drink-cover'>
+      <div class='beer-list'>
+          <h3 class='text-center'>Beers</h3>
+            <div class='divider'></div>
+            <div class='space-5'></div>
+            <div class='beer-list-mobile'>
+              <div class='row'>Here at LaVolata, we are excited to provide you with ten rotating beer taps! This allows us to offer our customers a different craft beer virtually every time they walk through the door.  We know that you are always interested in trying the latest beer on the market and we are here to help! We proudly feature beers from Hangar 24, Ritual, Refuge, No Clue Brew, Ballast Point, Stone, Lost Abbey, Port Brewing, Guiness, Modern Times, Avery, Mother Earth, Bear Republic, Coronado, Karl Strauss, Ska, Ace Hard Ciders, Green Flash, Firestone, Great Divide, Oskar Blues, Pizza Port, St Archer, and Wiens.</div>
+            </div>
+        </div>
+        <!-- WINE LIST -->
+      <div class='wine-list'>
+          <h3 class='text-center'>Wines</h3>
+            <div class='divider'></div>
+            <div class='col-md-6'>
+              <div class='row'>
+                <h4><b><u>Sparkling</u></b></h4>
+                <div class='row'><div class='col-md-8'>Pommeroy Champagne</div><div class='col-md-4'>14/54</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-8'>Veuve Clicquot</div><div class='col-md-4'>95</div></div><div class='space-2'></div>
+              </div>
+              <div class='row'>
+                <h4><b><u>Whites</u></b></h4>
+                <div class='row'><div class='col-md-8'>Lumen Starry Rose</div><div class='col-md-4'>10/31</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-8'>La Fiera Pinot Grigio</div><div class='col-md-4'>8/glass</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-8'>Terlan Pinot Grigio 2013</div><div class='col-md-4'>14/45</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-8'>Fontanabianca Arneis Langhe 2012</div><div class='col-md-4'>9/28</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-8'>Balestri Valda Soave Classico</div><div class='col-md-4'>9/28</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-8'>Talbott Kali Hart Chardonnay 2012</div><div class='col-md-4'>12/36</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-8'>Calera Central Coast Chardonnay 2013</div><div class='col-md-4'>15/48</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-8'>Cloudy Bay Sauvignon Blanc 2014</div><div class='col-md-4'>15/48</div></div><div class='space-2'></div>
+              </div>
+            </div>
+            <div class='col-md-6'>
+              <div class='row'>
+                <h4><b><u>Reds</u></b></h4>
+                <div class='row'><div class='col-md-10'>2012 Donna Laura Chianti Classico</div><div class='col-md-2'>9/27</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2011 Castello di Meleto Chianti Classico</div><div class='col-md-2'>36</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2011 Vini Menhir Quota 31 Primitivo</div><div class='col-md-2'>14/42</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2010 Francesco Borgogno Barolo</div><div class='col-md-2'>72</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2009 Argiano Brunello di Montalcino</div><div class='col-md-2'>90</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2011 MacRostie Pinot Noir, Sonoma Coast</div><div class='col-md-2'>52</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2011 Ledge Catacombs GSM, Paso Robles</div><div class='col-md-2'>60</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2012 Ancient Peaks Zinfandel, Paso Robles</div><div class='col-md-2'>10/30</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2012 Dashe Zinfandel, Dry Creek Valley</div><div class='col-md-2'>38</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2012 Milbrandt Cabernet Sauv, Columbia Valley Wa</div><div class='col-md-2'>9/26</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2013 Parcel 41 Cabernet, Oakville</div><div class='col-md-2'>13/40</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2012 Twenty Bench Cabernet Sauvignon, Napa</div><div class='col-md-2'>12/40</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2005 McGraw Cabernet, Sonoma Valley</div><div class='col-md-2'>44</div></div><div class='space-2'></div>
+                <div class='row'><div class='col-md-10'>2005 McGraw Cabernet Reserve, Sonoma Valley</div><div class='col-md-2'>55</div></div><div class='space-2'></div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ABOUT -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<div id='about'>
+<div class='divider'></div>
+<div class='row col-md-offset-2 about-stuff'>
+      <div class='col-md-4 text-center about-content'>
+          <p>La Volata is a restaurant located in Redlands, CA specializing in wood fired Neapolitan style pizzas. The restaurant is owned by Redlands residents Lori and Chris. Lori was born and raised in Redlands, while Chris, a prominent trial attorney, moved to Redlands in 2001.</p>
+      
+        </div>
+        <div class='col-md-2 about-title'>
+          <h1 class='text-center'>About La Volata</h1>
+        </div>
+      <div class='col-md-4 text-center about-content'>
+          <p>Our intent is to provide a neighborhood restaurant for locals to relax and enjoy the company of their neighbors and children over a bottle of wine or with a craft brew. We are not a fast food restaurant. All of our pizza dough, sausage, and sauce is made in house and cooked in our Italian built wood fired (local orange wood) pizza oven. Our distinctive tables as well as light fixtures were built by Lori as well.</p>
+        </div>
+    </div>
+<div class='divider'></div>
+</div>
+
 </body>
 </html>
